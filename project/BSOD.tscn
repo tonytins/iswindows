@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://OpenSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://InstallFont14.tres" type="DynamicFont" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 14
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="BOSD" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -350.0
+margin_top = -205.0
+margin_right = 350.0
+margin_bottom = 264.0
+custom_fonts/font = SubResource( 1 )
+text = "A problem has been detected and windows has been shut down to prevent damage to your computer.
+ 
+*** STOP: OxFFFFFFFF (OxFFFFFFFF, OxUUUUUUUU, OxUUUUUUUU, OxUUUUUUUU). 
+
+* Press any key to terminate the current application.
+* Press CTRL+ALT+DELETE again to restart your computer. You will lose any unsaved information in all applications. 
+
+Press any key to continue"
+autowrap = true
+
+[node name="WindowsPnl" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -52.5
+margin_top = 64.0
+margin_right = 52.5
+margin_bottom = 85.0
+custom_styles/panel = SubResource( 2 )
+
+[node name="WindowsLbl" type="Label" parent="WindowsPnl"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Windows"
+align = 1
+valign = 1
