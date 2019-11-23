@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://BSOD.gd" type="Script" id=1]
 [ext_resource path="res://OpenSans-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://InstallFont14.tres" type="DynamicFont" id=3]
-[ext_resource path="res://tonytins.svg" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 14
@@ -54,12 +53,3 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Windows"
 align = 1
 valign = 1
-
-[node name="TonytinsBtn" type="TextureButton" parent="."]
-margin_left = 740.96
-margin_top = 549.544
-margin_right = 944.96
-margin_bottom = 753.544
-rect_scale = Vector2( 0.2, 0.2 )
-texture_normal = ExtResource( 4 )
-[connection signal="pressed" from="TonytinsBtn" to="." method="_on_TonytinsBtn_pressed"]

@@ -1,5 +1,6 @@
 extends Control
 
-
-func _on_TonytinsBtn_pressed():
-	get_tree().change_scene("res://Installer.tscn")
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		if event.scancode != KEY_ENTER:
+			get_tree().change_scene("res://Installer.tscn")
